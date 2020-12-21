@@ -1,0 +1,225 @@
+@import url();
+
+* {
+  margin: auto;
+}
+body {
+  background-color: #f1f1f1;
+}
+/* Header */
+header {
+  background-color: #fff;
+  height: 40px;
+  overflow: hidden;
+  padding: 20px;
+}
+header h1 {
+  float: left;
+  font-family: calibri;
+}
+.logo {
+  color: #5fc1e8;
+}
+header nav {
+  float: right;
+}
+header nav ul {
+  list-style-type: none;
+}
+header nav ul li {
+  float: left;
+  margin-right: 10px;
+}
+a:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14pt;
+  font-family: calibri;
+  color: #43b7e4;
+}
+a:hover {
+  text-decoration: underline;
+  color: #1c9ed1;
+  transition: 1s;
+}
+/* Jumbotron */
+
+.jumbotron {
+  background-color: red;
+  height: 300px;
+  background: url("https://mdbootstrap.com/img/Photos/Others/gradient1.jpg")
+    no-repeat;
+  background-size: 100%;
+  padding: 100px;
+}
+.jumbotron h2 {
+  float: right;
+  color: #1b97c8;
+  text-shadow: 2px 2px 8px #fff;
+  font-size: 48pt;
+  font-family: calibri;
+}
+.jumbotron p {
+  width: 700px;
+  font-family: 20pt;
+  color: #414141;
+  position: absolute;
+  right: 60px;
+  top: 280px;
+  text-align: justify;
+  font-family: calibri;
+}
+.readmore {
+  position: absolute;
+  right: 60px;
+  bottom: 170px;
+  border: 1px solid #43b7e4;
+  padding: 10px;
+  background-color: #fff;
+}
+.readmore:hover {
+  background-color: #1c9ed1;
+  color: #ccc;
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+/* features */
+
+.features {
+  text-align: center;
+  width: 1000px;
+}
+.features ul h4 {
+  font-family: calibri;
+  color: #1c9ed1;
+  text-shadow: 2px 2px 4px #ccc;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 1px;
+}
+.features p {
+  padding: 12px;
+  font-family: calibri;
+  text-align: justify;
+  color: #18607d;
+}
+.features ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+.features ul li {
+  float: left;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  height: 160px;
+  width: 280px;
+  margin-right: 10px;
+  padding-top: 120px;
+}
+.features .features-1 {
+  background: url("data:image/png;base64,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")
+    no-repeat top center;
+  background-size: 100px 100px;
+  background-color: #fff;
+}
+.features .features-2 {
+  background: url("https://static.thenounproject.com/png/160795-200.png")
+    no-repeat top center;
+  background-size: 90px 90px;
+  background-color: #fff;
+}
+.features .features-3 {
+  background: url("https://www.vippng.com/png/detail/258-2584405_contact-information-png-icon-free-download-file-phone.png")
+    no-repeat top center;
+  background-size: 100px 100px;
+  background-color: #fff;
+}
+
+/* content */
+
+.content {
+  margin-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+article {
+  overflow: hidden;
+  background-color: #e4f3f9;
+  margin-bottom: 10px;
+  border: 1px solid #bce2f1;
+  padding: 15px;
+}
+article h3 a:link {
+  color: #3eadd9;
+  border-bottom: 1px dotted #3eadd9;
+  font-size: 24pt;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+article h3 a:hover {
+  text-decoration: none;
+  color: #2081a7;
+}
+article p {
+  font-family: calibri;
+  font-size: 18pt;
+  float: left;
+  width: 50%;
+  text-align: justify;
+}
+article img {
+  float: right;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 7px;
+  width: 400px;
+  height: 300px;
+}
+article .read {
+  float: right;
+  margin-right: 20px;
+  background-color: #fff;
+  border: 1px solid #54b6dd;
+  padding: 7px;
+  margin-top: 10px;
+}
+article .read:hover {
+  background-color: #1c9ed1;
+  color: #ccc;
+  text-decoration: none;
+  border: 1px solid #ccc;
+}
+/* footer */
+
+footer {
+  background-color: #fff;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-right: 100px;
+  padding-left: 100px;
+  border-top: 4px solid #dbdbdb;
+}
+.first-footer {
+  overflow: hidden;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+}
+.first-footer ul {
+  list-style-type: none;
+  float: left;
+  width: 260px;
+  margin-right: 10px;
+}
+.first-footer ul li {
+  text-indent: 20px;
+  margin-top: 10px;
+}
+.first-footer h4 {
+  color: #18607d;
+  border-bottom: 1px dotted #18607d;
+}
+.second-footer {
+  text-align: center;
+  color: #5883ff;
+  padding-bottom: 20px;
+}
